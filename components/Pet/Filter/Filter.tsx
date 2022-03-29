@@ -35,6 +35,8 @@ const Filter = ({
   return (
     <div className={styles.container}>
       {Object.keys(PET_TYPES).map((type) => {
+        const petTotalCount =
+          (petList && petList.filter((pet) => pet.type === type).length) || 0;
         return (
           <div key={type}>
             <FormGroup>
@@ -53,7 +55,7 @@ const Filter = ({
                     }}
                   />
                 }
-                label={type}
+                label={`${type}(${petTotalCount})`}
               />
             </FormGroup>
           </div>

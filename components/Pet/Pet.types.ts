@@ -3,4 +3,5 @@ export type PetType = {
   name: string;
   src: string;
   type: string;
+  desc: string;
 };
