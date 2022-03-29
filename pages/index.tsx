@@ -1,5 +1,5 @@
 import styles from "../styles/Home.module.css";
-import PetList from "../components/Pet/PetList";
+import PetList from "../components/Pet/PetList/PetList";
 
 export default function Home() {
   return (
