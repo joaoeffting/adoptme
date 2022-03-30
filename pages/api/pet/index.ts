@@ -1,7 +1,8 @@
+import nc from "next-connect";
 import type { NextApiRequest, NextApiResponse } from "next";
-import { PET_TYPES } from "../../constants";
+import { PET_TYPES } from "../../../constants";
 
-const petList = [
+export const petList = [
   {
     id: 1,
     name: "The Cute dog",
@@ -39,6 +40,8 @@ const petList = [
   },
 ];
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+const handler = nc().get((req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json(petList);
-}
+});
+
+export default handler;
