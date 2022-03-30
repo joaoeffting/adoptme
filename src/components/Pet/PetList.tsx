@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Grid, ImageList, ImageListItem } from "@mui/material";
-import { PetType } from "../Pet.types";
-import Filter from "../Filter/Filter";
+import { PetType } from "./Pet.types";
+import Filter from "./Filter/Filter";
 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
-import { PET_TYPES } from "../../../constants";
+import { PET_TYPES } from "../../../../constants";
 import { PetType } from "../Pet.types";
 import styles from "./Filter.module.css";
 
